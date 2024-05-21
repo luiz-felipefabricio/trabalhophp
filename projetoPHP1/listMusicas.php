@@ -18,7 +18,7 @@
                 <?php
                 require 'conectaBanco.php';
                 $sql = "SELECT * FROM musica";
-                $resultado = mysqli_query($banco, $sql); // Conexão com banco, consulta
+                $resultado = mysqli_query($banco, $sql); 
                 $banco->close();
                 ?>
                 <table class="table table-hover">
