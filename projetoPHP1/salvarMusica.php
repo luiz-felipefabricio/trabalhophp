@@ -20,10 +20,10 @@
         if(empty($musica)){
             echo "<p>Campo musica deve ser preenchido!</p>";
         }else{
-            // Monta comando SQL
+            
             $sql = "INSERT INTO musica(musica, genero, descricao) VALUES 
                                             ('$musica','$genero', '$desc')";
-            $banco->query($sql); // Executa comando SQL
+            $banco->query($sql); 
             if($banco->affected_rows >= 1){
                 echo "<p>$musica cadastrada com sucesso!</p>";
             }else{
